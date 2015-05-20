@@ -14,7 +14,7 @@ function sum_menu() {
 function sum_form() {
     $form['left_number']= array(
         '#title' => 'Left number',
-        '#type' => 'textfiled',
+        '#type' => 'textfield',
         '#description' => t('PLease enter your starting number.'),
 
     );
@@ -22,12 +22,12 @@ function sum_form() {
     $form['right_number'] = array(
         '#title' => 'Right number',
         '#type' => 'textfield',
-        '#description' => t('Please enter a  number to add to the starting number.'),
+        '#description' => t('Please enter a number to add to the starting number.'),
     );
 
     $form['submit']= array(
         '#type' => 'submit',
-        '#vaule' => 'Calculate Sum',
+        '#value' => 'Calculate Sum',
     );
     return $form;
 }
