@@ -10,11 +10,12 @@ function sum_menu() {
     );
     return $items;
 }
+
 function sum_form() {
     $form['left_number']= array(
         '#title' => 'Left number',
         '#type' => 'textfiled',
-        '#description' =. t('PLease enter your starting number.'),
+        '#description' => t('PLease enter your starting number.'),
 
     );
 
