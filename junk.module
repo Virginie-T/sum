@@ -8,7 +8,6 @@ function sum_menu() {
         'access callback' => TRUE,
         'type' => MENU_NORMAL_ITEM,
     );
-
     $items['success'] = array(
         'title' => 'Success',
         'page callback' => 'sum_success',
@@ -23,19 +22,17 @@ function sum_form() {
         '#title' => 'Left number',
         '#type' => 'textfield',
         '#description' => t('Please enter your starting number.'),
-
     );
-
     $form['right_number'] = array(
         '#title' => 'Right number',
         '#type' => 'textfield',
         '#description' => t('Please enter a number to add to the starting number.'),
     );
-
     $form['submit'] = array(
         '#type' => 'submit',
         '#value' => 'Calculate Sum',
     );
+
     return $form;
 }
 
