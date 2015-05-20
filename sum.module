@@ -39,13 +39,13 @@ function sum_form() {
     return $form;
 }
 
-function sum_form_submit($form, &$form_state) {
-    $first_number = $form_state['values']['left_number'];
-    $second_number = $form_state['values']['right_number'];
-    $sum = $first_number + $second_number;
-    $form_state['redirect'] = 'success';
-}
-
-function sum_success() {
-    return 'You calculated a sum!';
-}
+// function sum_form_submit($form, &$form_state) {
+//     $first_number = $form_state['values']['left_number'];
+//     $second_number = $form_state['values']['right_number'];
+//     $sum = $first_number + $second_number;
+//     $form_state['redirect'] = 'success';
+// }
+//
+// function sum_success() {
+//     return 'You calculated a sum!';
+// }
